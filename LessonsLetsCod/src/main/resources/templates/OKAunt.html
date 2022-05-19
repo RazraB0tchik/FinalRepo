@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link media="all" rel="stylesheet" type="text/css" href="/StyleAuntReg/Recover.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Archivo+Black&family=Fredoka+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="windowRec">
+<h2 class="intro">Recower password</h2>
+<div class="email" th:text="${userEmail}"></div>
+<p class="move">Enter your new password!</p>
+<!--/*@thymesVar id="user" type="com.makarproject.lessonsletscod.entity.User"*/-->
+<form class="newPass" name="recoverPas" th:object="${user}" th:action="@{/writePas}" method="post" >
+    <input class="newPassword" type="password" th:field="*{password}" name="password" placeholder="Enter new Password"/>
+    <br>
+    <input class="secondNewPassword" type="password" th:field="*{confimPassword}" name="confimPassword" placeholder="Confim your Password"/>
+    <div class = checkPass th:text="${errorePasw}"></div>
+    <div class = checkConfimPass th:text="${Errore}"></div>
+    <input class="bt" type="submit" value="OK">
+</form>
+</div>
+</body>
+</html>

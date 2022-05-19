@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.springframework.org/security/tags">
+<head>
+    <meta charset="UTF-8" />
+    <title>Autentification</title>
+    <link media="all" rel="stylesheet" type="text/css" href="/StyleAuntReg/StyleAu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Archivo+Black&family=Fredoka+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--<div sec:authorize="isAuthenticated()">-->
+<!--    Authenticated as <span sec:authentication="name"></span></div>-->
+<div class="window">
+<div class="hel">
+<h2 class="teg">Sign in!</h2>
+    <div class="errorAut" th:if="${param.error}">
+        Invalid username or password.
+    </div>
+</div>
+
+    <form class="avtoriz" name="signIn" th:action="@{/login}" method="post">
+     <input class="lg"  type="text" name="username" placeholder="Enter Login"/>
+    <br>
+      <input class="ps" type="password" name="password" placeholder="Enter Password"/>
+    <br>
+    <input class="bt" type="submit" value="OK">
+</form>
+    <form class="regist" name="Registrate", action="/registration">
+        <input class="rg" type="submit" value="Registrate"/>
+    </form>
+
+    <input class="forgotPas" type="submit" value="Forgot password?"/>
+
+    <form class="checkWindow" name="check" action="/active" method="get">
+        <p class="tegChFor">Enter your email, that take letter with activation!</p>
+        <input class="emailCheck" name="email" type="text" placeholder="Enter Email">
+
+    </form>
+
+<!--    <div class="company">-->
+<!--        <div class="logo">-->
+<!--            <?xml version="1.0" encoding="utf-8" ?>-->
+<!--            <svg baseProfile="full" height="100" version="1.1" viewBox="-0.5 -0.5 1.0 1.0" width="512" xmlns="http://www.w3.org/2000/svg" ><defs /><g fill="white" fill-opacity="0.75" stroke="black" stroke-linejoin="round" stroke-width="0.005"><polygon points="-0.0,0.38774 -0.14531,-0.10378 0.37235,-0.04509" /><polygon points="-0.0,-0.41374 0.37235,-0.04509 -0.14531,-0.10378" /><polygon points="-0.0,0.38774 -0.40348,0.04886 -0.14531,-0.10378" /><polygon points="-0.0,-0.41374 -0.14531,-0.10378 -0.40348,0.04886" /><polygon points="-0.0,0.38774 0.37235,-0.04509 0.17669,0.1262" /><polygon points="-0.0,-0.41374 0.17669,0.1262 0.37235,-0.04509" /><polygon points="-0.0,0.38774 0.17669,0.1262 -0.40348,0.04886" /><polygon points="-0.0,-0.41374 -0.40348,0.04886 0.17669,0.1262" /></g></svg>-->
+<!--        </div>-->
+<!--        <div class="ComName">-->
+<!--        <h1>CodeLore</h1>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+    <div class="backBut">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+        <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="30px" height="30px" fill="white" viewBox="0 0 459 459" style="enable-background:new 0 0 459 459;" xml:space="preserve">
+<g>
+	<g id="reply">
+		<path d="M178.5,140.25v-102L0,216.75l178.5,178.5V290.7c127.5,0,216.75,40.8,280.5,130.05C433.5,293.25,357,165.75,178.5,140.25z"
+        />
+	</g>
+</g>
+    </svg>
+    </div>
+
+</div>
+<script type="text/javascript" src="/StyleAuntReg/js/CheckForm.js"></script>
+</body>
+
+</html>

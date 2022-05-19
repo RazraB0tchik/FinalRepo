@@ -1,0 +1,177 @@
+.window{
+    background-color: rgb(43, 44, 48);
+    position: relative;
+}
+.shapka{
+    background-color: rgb(28, 28, 28);
+    height: 80px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+}
+body{
+    background-color: rgb(43, 44, 48);
+}
+.logo{
+    margin-top: 0px;
+    margin-left: -200px;
+    left: 10px;
+}
+.ComName{
+    font-family: 'Archivo Black', sans-serif;
+    color:white;
+    margin-top: -90px;
+    margin-left: 120px;
+    font-size: 20px;
+}
+.search{
+    min-width: 400px;
+    width: 50%;
+    height: 50px;
+    position: absolute;
+    right: 15%;
+    top: 20px;
+    border-style: groove;
+    border-radius: 10px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+.butSign{
+    position: absolute;
+    right: 25px;
+    background-color: white;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    height: 55px;
+    width: 200px;
+    top: 22px;
+    border-style: groove;
+    border-radius: 10px;
+}
+.sendvich{
+    margin-top: 5px;
+    position: fixed;
+    height: 780px;
+    width: 80px;
+    background-color: rgb(28, 28, 28);
+    border-radius: 10px;
+    left: 20px;
+}
+.karusel{
+    position: absolute;
+    flex-grow: 1;
+    background-color: black;
+    left: 7%;
+    right: 3%;
+    height: 50px;
+    border-radius: 10px;
+    top: 20px
+}
+.blockJava{
+    background-color: orange;
+    height: 40px;
+    width: 13%;
+    margin-left: 5%;
+    border-radius: 10px;
+    margin-top: -60px;
+}
+.name{
+    padding-top: 7px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.scrolLeft{
+margin-left: 0;
+    width: 40px;
+    height: 40px;
+    transform: rotate(180deg);
+    margin-top: 5px;
+}
+.scrolRight{
+    position: absolute;
+    right: 0%;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+.windowTest{
+    position: absolute;
+    background-color: rgb(28, 28, 28);
+    left: 7%;
+    height: 690px;
+    width: 1700px;
+    top: 90px;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: white;
+}
+.chapkaTest{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    overflow:hidden;
+}
+.fonTest{
+    position: absolute;
+    height: 600px;
+    width: 1600px;
+
+}
+.nameTest{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 50px;
+    color: white;
+    margin-top: 205px;
+    margin-left: 10px;
+}
+.question{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-top: 40px;
+}
+.testForm{
+    margin-left: 40px;
+}
+p{
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+}
+.goNextQuestion{
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    height: 50px;
+    width: 90px;
+    border-radius: 10px;
+    background-color: rgb(46, 163, 79);
+    border-style: groove;
+}
+.countTest{
+   display: inline-block;
+    font-size: 45px;
+}
+.testSize{
+    display: inline-block;
+    font-size: 30px;
+}
+.slesh{
+    display: inline-block;
+    font-size: 30px;
+}
+.schetQuestion{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    right: 40px;
+    top: 28%;
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+}

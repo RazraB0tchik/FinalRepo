@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Registration</title>
+    <link media="all" rel="stylesheet" type="text/css" href="/StyleAuntReg/Reg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Archivo+Black&family=Fredoka+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="windowRegistr">
+<h2 class="namePage">Registration</h2>
+    <!--/*@thymesVar id="user" type="com.makarproject.lessonsletscod.entity.User"*/-->
+    <form class="avtoriz"  name="registration" th:object="${user}" th:action="@{/registration}" method="post" >
+        <input class = "userName" type="text" th:field="*{username}" name="username" placeholder="Enter Login"/>
+<!--        <br>-->
+        <div class="erUser" th:if="${#fields.hasErrors('username')}" th:errors="*{username}">Name Error</div>
+    <br>
+
+      <input class="passMain" type="password" name="password" th:field="*{password}" placeholder="Enter Password"/>
+<!--        <div class="errorePas" th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password Error</div>-->
+        <input class="doubleCheck" type="password" name="passwordConfim" th:field="*{confimPassword}" placeholder="Confim Password"/>
+<!--        <div class="errorePas" th:if="${#fields.hasErrors('password')}" th:errors="*{confimPassword}">Password Error</div>-->
+        <div class="errorePas" th:text="${errorePasw}"></div>
+        <input class="userEmail" type="email" name="email" placeholder="Enter Email Adress"/>
+        <div class="erroreValidEmail" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</div>
+        <div class="erroreEmail" th:text="${erroreEM}">
+        </div>
+    <input class="bt" type="submit" value="OK">
+        <div class="passNotMat" th:text="${Errore}"></div>
+</form>
+
+</div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE HTML>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8" />-->
+<!--    <title>Registration</title>-->
+<!--    <link media="all" rel="stylesheet" type="text/css" th:href="@{/static/StyleAuntReg/StyleAu.css}">-->
+<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Archivo+Black&family=Fredoka+One&family=Permanent+Marker&display=swap" rel="stylesheet">-->
+<!--</head>-->
+<!--<body>-->
+<!--<h2>Registration</h2>-->
+<!--</div>-->
+<!--&lt;!&ndash;/*@thymesVar id="user" type="com"*/&ndash;&gt;-->
+<!--<form class="avtoriz"  name="registration" th:action="@{/registration}" method="post" modelAttribute="userForm">-->
+<!--    <input type="text" name="username" placeholder="Enter Login"/>-->
+<!--    <br>-->
+<!--    <input type="password" name="password" placeholder="Enter Password"/>-->
+<!--    <br>-->
+<!--    <input class="bt" type="submit" value="OK">-->
+<!--</form>-->
+
+<!--</div>-->
+
+<!--</body>-->
+
+<!--</html>-->
+

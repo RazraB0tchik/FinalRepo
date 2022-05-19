@@ -1,0 +1,133 @@
+body {
+   background-color: rgb(28, 28, 28);
+}
+.windowRegistr{
+   max-width: 700px;
+   position: fixed;
+   height: 700px;
+   width: 40%;
+   min-width: 500px;
+   top: 100px;
+   bottom: 50%;
+   left: 30%;
+   right: 30%;
+   background-color: rgb(43, 44, 48);
+   border-color: white;
+   border-style: groove;
+   border-radius: 20px;
+}
+.namePage{
+   font-size: 40px;
+   width: 50%;
+   margin-top: 10px;
+   margin-left: 25%;
+   margin-right: 25%;
+   font-family: 'Archivo Black', sans-serif;
+   text-align: center;
+   white-space: nowrap;
+   position: absolute;
+   color: white;
+}
+.userName{
+   font-family: 'Archivo Black', sans-serif;
+   width: 70%;
+   height: 60px;
+   border-radius: 15px;
+   margin-left: 15%;
+   margin-right: 15%;
+   margin-top: 130px;
+   font-size: 20px;
+   text-align: center;
+}
+.passMain{
+   font-family: 'Archivo Black', sans-serif;
+   width: 70%;
+   height: 60px;
+   margin-top: 30px;
+   border-radius: 15px;
+   margin-left: 15%;
+   margin-right: 15%;
+   font-size: 20px;
+   text-align: center;
+}
+.bt{
+   width: 60%;
+   height: 50px;
+   border-radius: 15px;
+   margin-left: 20%;
+   margin-right: 20%;
+   margin-bottom: 35px;
+   background-color: rgb(27, 125, 254);
+   border: none;
+   color: white;
+   font-family: 'Archivo Black', sans-serif;
+   text-shadow: black;
+}
+.erUser{
+   flex-grow: 1;
+   height: 50px;
+   margin-top: 10px;
+   font-size: 20px;
+   margin-bottom: -20px;
+   font-family: 'Archivo Black', sans-serif;
+   text-align: center;
+   color: red;
+}
+.errorePas{
+   flex-grow: 1;
+   height: 50px;
+   margin-top: 10px;
+   font-size: 20px;
+   font-family: 'Archivo Black', sans-serif;
+   text-align: center;
+   color: red;
+}
+.userEmail{
+   width: 70%;
+   height: 60px;
+   margin-top: -30px;
+   border-radius: 15px;
+   margin-left: 15%;
+   margin-right: 15%;
+   font-size: 20px;
+   text-align: center;
+   font-family: 'Archivo Black', sans-serif;
+}
+.erroreEmail{
+   flex-grow: 1;
+   height: 50px;
+   margin-top: 10px;
+   font-size: 20px;
+   font-family: 'Archivo Black', sans-serif;
+   text-align: center;
+   color: red;
+}
+.doubleCheck{
+   width: 70%;
+   height: 60px;
+   margin-top: 30px;
+   border-radius: 15px;
+   margin-left: 15%;
+   margin-right: 15%;
+   font-size: 20px;
+   text-align: center;
+   font-family: 'Archivo Black', sans-serif;
+}
+.erroreValidEmail{
+   flex-grow: 1;
+   height: 50px;
+   margin-top: 10px;
+   font-size: 20px;
+   font-family: 'Archivo Black', sans-serif;
+   text-align: center;
+   color: red;
+}
+.passNotMat {
+   flex-grow: 1;
+   height: 50px;
+   margin-top: 10px;
+   font-size: 20px;
+   font-family: 'Archivo Black', sans-serif;
+   text-align: center;
+   color: red;
+}
